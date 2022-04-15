@@ -1,0 +1,129 @@
+:root{
+    --preto:#000000;
+    --vermelho:#FF0000;
+    --branco:#FFF2F9;
+    --cinza: #949092;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Elementos Base*/
+body{
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50) 100%), url(/img/fundo-body/fundo1.jpg);
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    color: var(--vermelho);
+    font-family: 'Arial Black';
+    font-size: 40px;
+    text-align: left;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: var(--branco);
+    margin-right: 20px;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+/*Série Principal*/
+.titulo{
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.serie-principal{
+    font-size: 16px;
+    padding-left: 10px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50) 100%), url(/img/capas/capa-euphoria2.jpg);
+    
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.serie-principal .descricao{
+    margin-bottom: 30px;
+    margin-top: 10px;
+    width: 60%;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+        
+    padding: 15px 10px;
+    margin-right: 10px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin: 5px;
+}
+
+.botao a{
+    color: white;
+    text-decoration: none;
+}
+
+/*Carousel de Séries*/
+
+.carousel-titulo{
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: var(--cinza);
+
+}
+
+.box-serie{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carousel-series{
+    margin-top: 10px;
+}
+
+/*Carousel de Filmes*/
+
+.filme-box{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carousel-filmes{
+    margin-top: 5px;
+}
